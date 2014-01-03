@@ -13,8 +13,8 @@ development:
   encoding: utf8
   database: sensorapp_development
   pool: 5
-  username: railsapp
-  password: e61e8763e7cf5ebf7f508377fb8f31e7
+  username: root
+  password: jgs15021991
   socket: /var/run/mysqld/mysqld.sock
 
 # Warning: The database defined as "test" will be erased and
@@ -25,8 +25,8 @@ test:
   encoding: utf8
   database: sensorapp_test
   pool: 5
-  username: railsapp
-  password: e61e8763e7cf5ebf7f508377fb8f31e7
+  username: root
+  password: jgs15021991
   socket: /var/run/mysqld/mysqld.sock
 
 production:
@@ -34,6 +34,7 @@ production:
   encoding: utf8
   database: sensorapp_production
   pool: 5
-  username: railsapp
-  password: e61e8763e7cf5ebf7f508377fb8f31e7
+  username: root
+  password: jgs15021991
   socket: /var/run/mysqld/mysqld.sock
+

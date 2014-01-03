@@ -19,10 +19,10 @@
 -- Table structure for table `categoriaequipos`
 --
 
-DROP TABLE IF EXISTS `categoriaequipos`;
+DROP TABLE IF EXISTS `categoria_equipos`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `categoriaequipos` (
+CREATE TABLE `categoria_equipos` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(50) DEFAULT NULL,
   `descripcion` mediumtext,
@@ -34,10 +34,10 @@ CREATE TABLE `categoriaequipos` (
 -- Dumping data for table `categoriaequipos`
 --
 
-LOCK TABLES `categoriaequipos` WRITE;
-/*!40000 ALTER TABLE `categoriaequipos` DISABLE KEYS */;
-INSERT INTO `categoriaequipos` VALUES (1,'estacion_meteo_1','Estacion meterologica tipo 1'),(2,'estacion_meteo_2','Estacion metereologica tipo 2'),(3,'estacion_trafico_1','Estacion medicion trafico tipo 1'),(4,'estacion_trafico_2','Estacion medicion trafico tipo 2'),(5,'estacion_agua_1','Estacion medicion aguas tipo 1'),(6,'estacion_agua_2','Estacion medicion aguas tipo 2'),(7,'marquesina_bus','Estacion medicion marquesina autobus');
-/*!40000 ALTER TABLE `categoriaequipos` ENABLE KEYS */;
+LOCK TABLES `categoria_equipos` WRITE;
+/*!40000 ALTER TABLE `categoria_equipos` DISABLE KEYS */;
+INSERT INTO `categoria_equipos` VALUES (1,'estacion_meteo_1','Estacion meterologica tipo 1'),(2,'estacion_meteo_2','Estacion metereologica tipo 2'),(3,'estacion_trafico_1','Estacion medicion trafico tipo 1'),(4,'estacion_trafico_2','Estacion medicion trafico tipo 2'),(5,'estacion_agua_1','Estacion medicion aguas tipo 1'),(6,'estacion_agua_2','Estacion medicion aguas tipo 2'),(7,'marquesina_bus','Estacion medicion marquesina autobus');
+/*!40000 ALTER TABLE `categoria_equipos` ENABLE KEYS */;
 UNLOCK TABLES;
 
 

@@ -11,29 +11,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131103012624) do
+ActiveRecord::Schema.define(version: 20140103003705) do
 
   create_table "categoria_equipos", force: true do |t|
-    t.string   "nombre"
-    t.string   "descripcion"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string "nombre",      limit: 50
+    t.text   "descripcion", limit: 16777215
+  end
+
+  create_table "categoriaequipos", force: true do |t|
+    t.string "nombre",      limit: 50
+    t.text   "descripcion", limit: 16777215
   end
 
   create_table "concentradors", force: true do |t|
     t.integer  "categoria_equipo_id"
     t.string   "nombre"
     t.string   "descripcion"
-    t.string   "clave_externa"
+    t.string   "estado"
     t.float    "gis_latitud"
     t.float    "gis_longitud"
     t.string   "mac_address"
     t.string   "numero_serie"
     t.string   "ip_address"
     t.integer  "ip_port"
-    t.string   "access_url"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "concentradors", ["categoria_equipo_id"], name: "index_concentradors_on_categoria_equipo_id", using: :btree
 
 end
