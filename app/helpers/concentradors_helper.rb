@@ -1,0 +1,2 @@
+module ConcentradorsHelper
+end

@@ -1,5 +1,5 @@
 class CategoriaEquiposController < ApplicationController
-  before_action :set_categoria_equipo, only: [:show, :edit, :update, :destroy]
+  before_action :set_categoria_equipo, only: [:show, :edit, :update, :destroy, :estaciones]
 
   # GET /categoria_equipos
   # GET /categoria_equipos.json
@@ -11,7 +11,8 @@ class CategoriaEquiposController < ApplicationController
   # GET /categoria_equipos/1.json
   def show
   end
-
+  def estaciones
+  end
   # GET /categoria_equipos/new
   def new
     @categoria_equipo = CategoriaEquipo.new

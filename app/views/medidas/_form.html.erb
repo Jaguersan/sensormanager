@@ -1,0 +1,11 @@
+<%= semantic_form_for @medida do |f| %>
+  <%= f.inputs do %>
+    <%= f.input :sensor, :as => :select, :member_label => :nombre %>
+    <%= f.input :fecha %>
+    <%= f.input :valor %>
+  <% end %>
+
+  <%= f.actions do %>
+    <%= f.action :submit, :as => :input %>
+  <% end %>
+<% end %>

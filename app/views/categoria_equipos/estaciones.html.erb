@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+
+
+<h1>Listing Estaciones</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Descripcion</th>
+      <th>Estado</th>
+      <th>Gis latitud</th>
+      <th>Gis longitud</th>
+      <th>Mac address</th>
+      <th>Numero serie</th>
+      <th>Ip address</th>
+      <th>Ip port</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @categoria_equipo.concentradors.each do |concentrador| %>
+      <tr>
+        <td><%= concentrador.nombre %></td>
+        <td><%= concentrador.descripcion %></td>
+        <td><%= concentrador.estado %></td>
+        <td><%= concentrador.gis_latitud %></td>
+        <td><%= concentrador.gis_longitud %></td>
+        <td><%= concentrador.mac_address %></td>
+        <td><%= concentrador.numero_serie %></td>
+        <td><%= concentrador.ip_address %></td>
+        <td><%= concentrador.ip_port %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

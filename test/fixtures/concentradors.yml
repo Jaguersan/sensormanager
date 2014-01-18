@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  categoria_equipo_id: 
+  nombre: MyString
+  descripcion: MyString
+  estado: MyString
+  gis_latitud: 1.5
+  gis_longitud: 1.5
+  mac_address: MyString
+  numero_serie: MyString
+  ip_address: MyString
+  ip_port: 1
+
+two:
+  categoria_equipo_id: 
+  nombre: MyString
+  descripcion: MyString
+  estado: MyString
+  gis_latitud: 1.5
+  gis_longitud: 1.5
+  mac_address: MyString
+  numero_serie: MyString
+  ip_address: MyString
+  ip_port: 1

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Concentrador:</strong>
+  <%= @sensor.concentrador.nombre %>
+</p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @sensor.nombre %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @sensor.descripcion %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @sensor.estado %>
+</p>
+
+<p>
+  <strong>Parametro:</strong>
+  <%= @sensor.parametro %>
+</p>
+
+<p>
+  <strong>Valor:</strong>
+  <%= @sensor.valor %>
+</p>
+
+<p>
+  <strong>Uds:</strong>
+  <%= @sensor.uds %>
+</p>
+
+<%= link_to 'Edit', edit_sensor_path(@sensor) %> |
+<%= link_to 'Back', sensors_path %>

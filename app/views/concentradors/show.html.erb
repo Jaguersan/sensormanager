@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Categoria equipo:</strong>
+  <%= @concentrador.categoria_equipo.nombre %>
+</p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @concentrador.nombre %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @concentrador.descripcion %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @concentrador.estado %>
+</p>
+
+<p>
+  <strong>Gis latitud:</strong>
+  <%= @concentrador.gis_latitud %>
+</p>
+
+<p>
+  <strong>Gis longitud:</strong>
+  <%= @concentrador.gis_longitud %>
+</p>
+
+<p>
+  <strong>Mac address:</strong>
+  <%= @concentrador.mac_address %>
+</p>
+
+<p>
+  <strong>Numero serie:</strong>
+  <%= @concentrador.numero_serie %>
+</p>
+
+<p>
+  <strong>Ip address:</strong>
+  <%= @concentrador.ip_address %>
+</p>
+
+<p>
+  <strong>Ip port:</strong>
+  <%= @concentrador.ip_port %>
+</p>
+
+<%= link_to 'Edit', edit_concentrador_path(@concentrador) %> |
+<%= link_to 'Back', concentradors_path %>

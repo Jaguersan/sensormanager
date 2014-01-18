@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  concentrador_id: 
+  nombre: MyString
+  descripcion: MyString
+  estado: MyString
+  parametro: MyString
+  valor: 1.5
+  uds: MyString
+
+two:
+  concentrador_id: 
+  nombre: MyString
+  descripcion: MyString
+  estado: MyString
+  parametro: MyString
+  valor: 1.5
+  uds: MyString

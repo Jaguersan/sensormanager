@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @sensor.nombre %>
+</p>
+
+<h1>Listing medidas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Fecha</th>
+      <th>Valor</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sensor.medidas.each do |medida| %>
+      <tr>
+        <td><%= medida.fecha %></td>
+        <td><%= medida.valor %></td>
+        <td><%= link_to 'Show', medida %></td>
+        <td><%= link_to 'Edit', edit_medida_path(medida) %></td>
+        <td><%= link_to 'Destroy', medida, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

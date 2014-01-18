@@ -5,6 +5,8 @@
     <tr>
       <th>Nombre</th>
       <th>Descripcion</th>
+      <th> N. Estaciones</th>
+      <th></th>
       <th></th>
       <th></th>
       <th></th>
@@ -16,9 +18,11 @@
       <tr>
         <td><%= categoria_equipo.nombre %></td>
         <td><%= categoria_equipo.descripcion %></td>
+        <td><%= categoria_equipo.concentradors.count %></td>
         <td><%= link_to 'Show', categoria_equipo %></td>
         <td><%= link_to 'Edit', edit_categoria_equipo_path(categoria_equipo) %></td>
         <td><%= link_to 'Destroy', categoria_equipo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Estaciones', estaciones_categoria_equipo_path(categoria_equipo) %></td>
       </tr>
     <% end %>
   </tbody>

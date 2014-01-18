@@ -1,0 +1,47 @@
+<h1>Listing concentradors</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Categoria equipo</th>
+      <th>Nombre</th>
+      <th>Descripcion</th>
+      <th>Estado</th>
+      <th>Gis latitud</th>
+      <th>Gis longitud</th>
+      <th>Mac address</th>
+      <th>Numero serie</th>
+      <th>Ip address</th>
+      <th>Ip port</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @concentradors.each do |concentrador| %>
+      <tr>
+        <td><%= concentrador.categoria_equipo.nombre %></td>
+        <td><%= concentrador.nombre %></td>
+        <td><%= concentrador.descripcion %></td>
+        <td><%= concentrador.estado %></td>
+        <td><%= concentrador.gis_latitud %></td>
+        <td><%= concentrador.gis_longitud %></td>
+        <td><%= concentrador.mac_address %></td>
+        <td><%= concentrador.numero_serie %></td>
+        <td><%= concentrador.ip_address %></td>
+        <td><%= concentrador.ip_port %></td>
+        <td><%= link_to 'Show', concentrador %></td>
+        <td><%= link_to 'Edit', edit_concentrador_path(concentrador) %></td>
+        <td><%= link_to 'Destroy', concentrador, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Sensores', sensores_concentrador_path(concentrador) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Concentrador', new_concentrador_path %>

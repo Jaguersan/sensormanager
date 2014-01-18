@@ -1,0 +1,41 @@
+<h1>Listing sensors</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Concentrador</th>
+      <th>Nombre</th>
+      <th>Descripcion</th>
+      <th>Estado</th>
+      <th>Parametro</th>
+      <th>Valor</th>
+      <th>Uds</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sensors.each do |sensor| %>
+      <tr>
+        <td><%= sensor.concentrador.nombre %></td>
+        <td><%= sensor.nombre %></td>
+        <td><%= sensor.descripcion %></td>
+        <td><%= sensor.estado %></td>
+        <td><%= sensor.parametro %></td>
+        <td><%= sensor.valor %></td>
+        <td><%= sensor.uds %></td>
+        <td><%= link_to 'Show', sensor %></td>
+        <td><%= link_to 'Edit', edit_sensor_path(sensor) %></td>
+        <td><%= link_to 'Destroy', sensor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Medidas', mediciones_sensor_path(sensor) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Sensor', new_sensor_path %>

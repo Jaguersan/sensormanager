@@ -1,0 +1,18 @@
+<%= semantic_form_for @concentrador do |f| %>
+  <%= f.inputs do %>
+    <%= f.input :categoria_equipo, :as => :select, :member_label => :nombre %>  
+    <%= f.input :nombre %>
+    <%= f.input :descripcion %>
+    <%= f.input :estado %>
+    <%= f.input :gis_latitud %>
+    <%= f.input :gis_longitud %>
+    <%= f.input :mac_address %>
+    <%= f.input :numero_serie %>
+    <%= f.input :ip_address %>
+    <%= f.input :ip_port %>
+  <% end %>
+
+  <%= f.actions do %>
+    <%= f.action :submit, :as => :input %>
+  <% end %>
+<% end %>
