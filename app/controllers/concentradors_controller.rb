@@ -15,6 +15,9 @@ class ConcentradorsController < ApplicationController
   def sensores
   end
 
+  def galeria
+  end
+
   # GET /concentradors/new
   def new
     @concentrador = Concentrador.new

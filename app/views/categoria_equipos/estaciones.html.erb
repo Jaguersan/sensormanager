@@ -1,20 +1,20 @@
 <p id="notice"><%= notice %></p>
 
 
-<h1>Listing Estaciones</h1>
-
+<h1>Mostrando Estaciones para la Categoria "<%= @categoria_equipo.nombre %>"</h1>
+<div id="tabla2">
 <table>
   <thead>
     <tr>
-      <th>Nombre</th>
-      <th>Descripcion</th>
-      <th>Estado</th>
-      <th>Gis latitud</th>
-      <th>Gis longitud</th>
-      <th>Mac address</th>
-      <th>Numero serie</th>
-      <th>Ip address</th>
-      <th>Ip port</th>
+      <th class="th">Nombre</th>
+      <th class="th">Descripcion</th>
+      <th class="th">Estado</th>
+      <th class="th">Gis latitud</th>
+      <th class="th">Gis longitud</th>
+      <th class="th">Mac address</th>
+      <th class="th">Numero serie</th>
+      <th class="th">Ip address</th>
+      <th class="th">Ip port</th>
     </tr>
   </thead>
 
@@ -34,5 +34,6 @@
     <% end %>
   </tbody>
 </table>
-
+</div>
 <br>
+<%= link_to 'Back', categoria_equipos_path %>

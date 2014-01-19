@@ -1,6 +1,25 @@
 Sensormanager::Application.routes.draw do
-  resources :categoria_equipos
+  resources :medidas
 
+  resources :sensors do
+    member do
+      get 'mediciones'
+    end
+  end
+
+  resources :concentradors do
+    member do 
+      get 'sensores'
+    end
+  end
+
+  resources :categoria_equipos do
+    member do
+      get 'estaciones'
+    end
+  end
+
+ get 'galeria', to: 'concentradors#galeria'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

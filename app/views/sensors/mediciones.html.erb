@@ -1,20 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Nombre:</strong>
-  <%= @sensor.nombre %>
-</p>
 
-<h1>Listing medidas</h1>
-
+<h1>Mostrando Medidas para el sensor "<%= @sensor.nombre %>"</h1>
+<div id="tabla4">
 <table>
   <thead>
     <tr>
-      <th>Fecha</th>
-      <th>Valor</th>
-      <th></th>
-      <th></th>
-      <th></th>
+      <th class="th">Fecha</th>
+      <th class="th">Valor</th>
     </tr>
   </thead>
 
@@ -23,10 +16,10 @@
       <tr>
         <td><%= medida.fecha %></td>
         <td><%= medida.valor %></td>
-        <td><%= link_to 'Show', medida %></td>
-        <td><%= link_to 'Edit', edit_medida_path(medida) %></td>
-        <td><%= link_to 'Destroy', medida, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
+</div>
+<br>
+<%= link_to 'Back', sensors_path %>

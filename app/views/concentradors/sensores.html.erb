@@ -1,22 +1,18 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Nombre:</strong>
-  <%= @concentrador.nombre %>
-</p>
 
-<h1>Listing sensors</h1>
-
+<h1>Mostrando Sensores para la Estación "<%= @concentrador.nombre %>"</h1>
+<div id="tabla3">
 <table>
   <thead>
     <tr>
-      <th>Concentrador</th>
-      <th>Nombre</th>
-      <th>Descripcion</th>
-      <th>Estado</th>
-      <th>Parametro</th>
-      <th>Valor</th>
-      <th>Uds</th>
+      <th class="th">Concentrador</th>
+      <th class="th">Nombre</th>
+      <th class="th">Descripcion</th>
+      <th class="th">Estado</th>
+      <th class="th">Parametro</th>
+      <th class="th">Valor</th>
+      <th class="th">Uds</th>
     </tr>
   </thead>
 
@@ -34,3 +30,6 @@
     <% end %>
   </tbody>
 </table>
+</div>
+<br>
+<%= link_to 'Back', concentradors_path %>

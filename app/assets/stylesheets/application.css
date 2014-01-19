@@ -37,6 +37,7 @@ a {
   padding : 1px;
   background-color: #ccff66;
   color: #334c00;
+  width: auto;
 }
 .servtel_menu_item a:visited {
   color: #334c00;
@@ -91,3 +92,58 @@ a {
 .servtel_menu_item a:visited {
   color: #ccff66;
   }
+
+#slidebar {
+  padding-left: 1px;
+  padding-top: 5px;
+}
+
+.fondo_slidebar {
+  
+  border-radius:10px 10px 10px 10px;
+  width:650px;
+  height:115px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#contenido_galeria {   
+  height: 500px; 
+  width: auto; 
+  padding-top: 50px; 
+}
+#textzoom {
+  border-radius:10px 10px 10px 10px;
+  float:left;
+  padding-top: 122px;
+  padding-left: 10px; 
+  
+}
+
+.muestra {
+  margin-top:50px;
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 800px;
+  border-radius:10px 10px 10px 10px;
+  height:300px;
+}
+#thumb {
+  display:inline;
+}
+
+#zoom {
+    float:left;
+}
+
+#f_i {
+  padding-bottom: 24px;
+  margin-right: -8px;
+}
+#f_d {
+  
+  padding-bottom: 24px;
+  margin-left: -13px;
+}
+
+
